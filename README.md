@@ -1,25 +1,37 @@
 ﻿# smartdrop-shared
 
-> **SmartDrop â€” IoT Liquid Monitoring & Quality Management**  
-> UPC â€” Fundamentos de Arquitectura de Software (2026-20)  
-> Autor: **Angel Jose Pariona Chacca**
+> **SmartDrop - IoT Liquid Monitoring & Quality Management**  
+> *UPC - Fundamentos de Arquitectura de Software (2026-20)*  
+> *Autor Responsable:* **Angel Jose Pariona Chacca**
 
-## ðŸ“‹ Descripcion
-SmartDrop Shared Kernel: Biblioteca comun de infraestructura, Outbox Pattern, CORS, Security base y Liveness Health
+---
 
-## ðŸš€ Ejecucion Rapida (Zero Friction)
-Para iniciar el servicio localmente:
-``bash
-# En Windows PowerShell
+## Descripcion General
+
+Biblioteca compartida transversal (Shared Kernel) empaquetada como artefacto JAR reutilizable. Contiene el patron Transactional Outbox para publicacion confiable de eventos, configuracion de seguridad base, politicas CORS para aplicaciones cliente y sonda de salud para orquestacion en la nube.
+
+---
+
+## Ejecucion en Entorno Local
+
+Para compilar y ejecutar el proyecto localmente sin preconfiguraciones externas:
+
+``powershell
+# Compilacion y arranque con Maven Wrapper
 ./mvnw spring-boot:run
 ``
 
-* **Puerto Local:** $(System.Collections.Hashtable.Port)
-* **Swagger UI:** [http://localhost:N/A/swagger-ui/index.html](http://localhost:N/A/swagger-ui/index.html)
-* **OpenAPI Docs:** [http://localhost:N/A/v3/api-docs](http://localhost:N/A/v3/api-docs)
-* **Health Check Probe:** [http://localhost:N/A/api/v1/health](http://localhost:N/A/api/v1/health)
+## Informacion de Empaquetado
 
-## ðŸ§ª Pruebas Automatizadas
-``bash
+* **Tipo de Artefacto:** Biblioteca JAR reutilizable (*Shared Kernel*)
+* **Dependencias Principales:** Spring Data JPA, Spring Security, Springdoc OpenAPI, Hibernate
+
+---
+
+## Pruebas Automatizadas
+
+Para validar la suite de pruebas unitarias y de integracion:
+
+``powershell
 ./mvnw test
 ``
