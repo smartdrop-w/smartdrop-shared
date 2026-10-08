@@ -16,10 +16,10 @@ Biblioteca compartida transversal (Shared Kernel) empaquetada como artefacto JAR
 
 Para compilar y ejecutar el proyecto localmente sin preconfiguraciones externas:
 
-``powershell
+```powershell
 # Compilacion y arranque con Maven Wrapper
 ./mvnw spring-boot:run
-``
+```
 
 ## Informacion de Empaquetado
 
@@ -32,6 +32,6 @@ Para compilar y ejecutar el proyecto localmente sin preconfiguraciones externas:
 
 Para validar la suite de pruebas unitarias y de integracion:
 
-``powershell
+```powershell
 ./mvnw test
 ```
