@@ -47,7 +47,7 @@ public class OpenApiConfiguration {
      * @return a configured {@link OpenAPI} instance containing application metadata
      */
     @Bean
-    public OpenAPI learningPlatformOpenApi() {
+    public OpenAPI smartDropOpenApi() {
 
         // General configuration
 
@@ -60,8 +60,8 @@ public class OpenApiConfiguration {
                         .license(new License().name("Apache 2.0")
                                 .url("https://springdoc.org")))
                 .externalDocs(new ExternalDocumentation()
-                        .description("ACME Learning Platform wiki Documentation")
-                        .url("https://acme-learning-platform.wiki.github.io/docs"));
+                        .description("SmartDrop Microservices Platform Documentation")
+                        .url("https://github.com/SmartDrop-Platform/docs"));
 
         // Add a security scheme
 
